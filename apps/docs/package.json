@@ -1,11 +1,11 @@
 {
-  "name": "@unique-ui/docs",
+  "name": "@get-ui/docs",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "start":"next start",
+    "start": "next start",
     "build": "next build",
     "lint": "next lint"
   },
@@ -13,8 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@unique-ui/react": "workspace:^",
-    "@unique-ui/table": "workspace:^",
+    "@get-ui/react": "workspace:^",
     "framer-motion": "^10.12.18",
     "next": "13.4.12",
     "nextra": "^2.10.0",

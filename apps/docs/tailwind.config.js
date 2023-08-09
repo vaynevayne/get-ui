@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const { nextui } = require("@unique-ui/react");
+const { getui } = require("@get-ui/react");
 
 module.exports = {
   content: [
@@ -10,12 +10,12 @@ module.exports = {
 
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@unique-ui/theme/dist/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@unique-ui/button/dist/button.js", // <- single component styles
+    "./node_modules/@get-ui/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@get-ui/button/dist/button.js", // <- single component styles
   ],
   theme: {
     extend: {},
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [getui()],
 };
