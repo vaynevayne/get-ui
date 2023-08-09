@@ -1,0 +1,68 @@
+{
+  "name": "@get-ui/navbar",
+  "version": "2.0.5",
+  "description": "A responsive navigation header positioned on top side of your page that includes support for branding, links, navigation, collapse and more.",
+  "keywords": [
+    "navbar"
+  ],
+  "author": "Junior Garcia <jrgarciadev@gmail.com>",
+  "homepage": "https://nextui.org",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/get-ui/nextui.git",
+    "directory": "packages/components/navbar"
+  },
+  "bugs": {
+    "url": "https://github.com/get-ui/nextui/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "framer-motion": ">=4.0.0"
+  },
+  "dependencies": {
+    "@get-ui/shared-utils": "workspace:*",
+    "@get-ui/react-utils": "workspace:*",
+    "@get-ui/system": "workspace:*",
+    "@get-ui/theme": "workspace:*",
+    "@get-ui/framer-transitions": "workspace:*",
+    "@get-ui/use-aria-toggle-button": "workspace:*",
+    "@get-ui/use-scroll-position": "workspace:*",
+    "@react-aria/focus": "^3.13.0",
+    "@react-aria/interactions": "^3.16.0",
+    "@react-aria/utils": "^3.18.0",
+    "@react-stately/toggle": "^3.6.0",
+    "@react-stately/utils": "^3.7.0",
+    "@react-aria/overlays": "^3.15.0",
+    "react-remove-scroll": "^2.5.6"
+  },
+  "devDependencies": {
+    "@get-ui/avatar": "workspace:*",
+    "@get-ui/button": "workspace:*",
+    "@get-ui/dropdown": "workspace:*",
+    "@get-ui/input": "workspace:*",
+    "@get-ui/link": "workspace:*",
+    "@get-ui/shared-icons": "workspace:*",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0",
+    "react-lorem-component": "0.13.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

@@ -1,0 +1,58 @@
+{
+  "name": "@get-ui/switch",
+  "version": "2.0.5",
+  "description": "A switch is similar to a checkbox, but represents on/off values as opposed to selection.",
+  "keywords": [
+    "switch"
+  ],
+  "author": "Junior Garcia <jrgarciadev@gmail.com>",
+  "homepage": "https://nextui.org",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/get-ui/nextui.git",
+    "directory": "packages/components/switch"
+  },
+  "bugs": {
+    "url": "https://github.com/get-ui/nextui/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "dependencies": {
+    "@get-ui/shared-utils": "workspace:*",
+    "@get-ui/react-utils": "workspace:*",
+    "@get-ui/system": "workspace:*",
+    "@get-ui/theme": "workspace:*",
+    "@react-aria/focus": "^3.13.0",
+    "@react-aria/interactions": "^3.16.0",
+    "@react-aria/switch": "^3.5.2",
+    "@react-aria/utils": "^3.18.0",
+    "@react-aria/visually-hidden": "^3.8.2",
+    "@react-stately/toggle": "^3.6.0",
+    "@react-types/shared": "^3.18.1"
+  },
+  "devDependencies": {
+    "clean-package": "2.2.0",
+    "react": "^18.0.0",
+    "@get-ui/shared-icons": "workspace:*"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

@@ -1,0 +1,16 @@
+
+## Hello MDX
+ 
+import { useState } from 'react'
+ 
+export function Counter({ children }) {
+  const [count, setCount] = useState(0)
+  return (
+    <button onClick={() => setCount(count + 1)} className="text-3xl font-bold underline">
+      {children}
+      {count}
+    </button>
+  )
+}
+ 
+<Counter>**Clicks**: </Counter>

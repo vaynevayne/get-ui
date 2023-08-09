@@ -1,0 +1,37 @@
+import type { {{capitalize componentName}}VariantProps } from "@get-ui/theme";
+
+import {HTMLNextUIProps,mapPropsVariants} from "@get-ui/system";
+import { {{componentName}} } from "@get-ui/theme";
+import {ReactRef, useDOMRef} from "@get-ui/react-utils";
+import {useMemo} from "react";
+
+export interface Use{{capitalize componentName}}Props extends 
+HTMLNextUIProps<"div", {{capitalize componentName}}VariantProps> {
+  /**
+   * Ref to the DOM node.
+   */
+  ref?: ReactRef<HTMLElement | null>;
+}
+
+export function use{{capitalize componentName}}(originalProps: Use{{capitalize componentName}}Props) {
+  const [props, variantProps] = mapPropsVariants(originalProps, {{componentName}}.variantKeys);
+
+  const {ref, as, className, ...otherProps} = props;
+
+  const Component = as || "div";
+
+  const domRef = useDOMRef(ref);
+
+  const styles = useMemo(
+  () =>
+    {{componentName}}({
+      ...variantProps,
+      className,
+    }),
+  [...Object.values(variantProps), className],
+);
+
+  return {Component, styles, domRef, ...otherProps};
+}
+
+export type Use{{capitalize componentName}}Return = ReturnType<typeof use{{capitalize componentName}}>;

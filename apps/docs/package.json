@@ -1,0 +1,30 @@
+{
+  "name": "@unique-ui/docs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "start":"next start",
+    "build": "next build",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@unique-ui/react": "workspace:^",
+    "@unique-ui/table": "workspace:^",
+    "framer-motion": "^10.12.18",
+    "next": "13.4.12",
+    "nextra": "^2.10.0",
+    "nextra-theme-docs": "^2.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  }
+}

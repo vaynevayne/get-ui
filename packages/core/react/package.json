@@ -1,0 +1,86 @@
+{
+  "name": "@get-ui/react",
+  "version": "2.0.8",
+  "description": "🚀 Beautiful and modern React UI library.",
+  "author": "Junior Garcia <jrgarciadev@gmail.com>",
+  "homepage": "https://nextui.org",
+  "license": "MIT",
+  "keywords": [
+    "next",
+    "next ui",
+    "components",
+    "modern components",
+    "react components",
+    "react ui"
+  ],
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/get-ui/nextui.git",
+    "directory": "packages/core/react"
+  },
+  "bugs": {
+    "url": "https://github.com/get-ui/nextui/issues"
+  },
+  "scripts": {
+    "prebuild": "node src/scripts/prebuild.js",
+    "build": "tsup --dts",
+    "postbuild": "node src/scripts/postbuild.js",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "build:fast": "tsup",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "dependencies": {
+    "@get-ui/system": "workspace:*",
+    "@get-ui/theme": "workspace:*",
+    "@get-ui/accordion": "workspace:*",
+    "@get-ui/avatar": "workspace:*",
+    "@get-ui/badge": "workspace:*",
+    "@get-ui/button": "workspace:*",
+    "@get-ui/card": "workspace:*",
+    "@get-ui/chip": "workspace:*",
+    "@get-ui/checkbox": "workspace:*",
+    "@get-ui/code": "workspace:*",
+    "@get-ui/link": "workspace:*",
+    "@get-ui/pagination": "workspace:*",
+    "@get-ui/radio": "workspace:*",
+    "@get-ui/snippet": "workspace:*",
+    "@get-ui/spinner": "workspace:*",
+    "@get-ui/switch": "workspace:*",
+    "@get-ui/tooltip": "workspace:*",
+    "@get-ui/user": "workspace:*",
+    "@get-ui/progress": "workspace:*",
+    "@get-ui/input": "workspace:*",
+    "@get-ui/popover": "workspace:*",
+    "@get-ui/dropdown": "workspace:*",
+    "@get-ui/image": "workspace:*",
+    "@get-ui/modal": "workspace:*",
+    "@get-ui/navbar": "workspace:*",
+    "@get-ui/table": "workspace:*",
+    "@get-ui/spacer": "workspace:*",
+    "@get-ui/divider": "workspace:*",
+    "@get-ui/kbd": "workspace:*",
+    "@get-ui/tabs": "workspace:*",
+    "@get-ui/skeleton": "workspace:*",
+    "@react-aria/visually-hidden": "^3.8.2"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "framer-motion": ">=4.0.0"
+  },
+  "devDependencies": {
+    "react": "^18.0.0",
+    "clean-package": "2.2.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

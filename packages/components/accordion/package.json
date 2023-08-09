@@ -1,0 +1,72 @@
+{
+  "name": "@get-ui/accordion",
+  "version": "2.0.5",
+  "description": "Collapse display a list of high-level options that can expand/collapse to reveal more information.",
+  "keywords": [
+    "react",
+    "accordion",
+    "collapse",
+    "display",
+    "list",
+    "expand",
+    "tree view"
+  ],
+  "author": "Junior Garcia <jrgarciadev@gmail.com>",
+  "homepage": "https://nextui.org",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/get-ui/nextui.git",
+    "directory": "packages/components/accordion"
+  },
+  "bugs": {
+    "url": "https://github.com/get-ui/nextui/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "framer-motion": ">=4.0.0"
+  },
+  "dependencies": {
+    "@get-ui/aria-utils": "workspace:*",
+    "@get-ui/shared-icons": "workspace:*",
+    "@get-ui/shared-utils": "workspace:*",
+    "@get-ui/react-utils": "workspace:*",
+    "@get-ui/framer-transitions": "workspace:*",
+    "@get-ui/use-aria-accordion-item": "workspace:*",
+    "@get-ui/system": "workspace:*",
+    "@get-ui/theme": "workspace:*",
+    "@get-ui/divider": "workspace:*",
+    "@react-aria/accordion": "3.0.0-alpha.19",
+    "@react-aria/interactions": "^3.16.0",
+    "@react-aria/focus": "^3.13.0",
+    "@react-aria/utils": "^3.18.0",
+    "@react-stately/tree": "^3.7.0"
+  },
+  "devDependencies": {
+    "@get-ui/avatar": "workspace:*",
+    "@get-ui/test-utils": "workspace:*",
+    "@react-types/accordion": "3.0.0-alpha.14",
+    "@react-types/shared": "^3.18.1",
+    "framer-motion": "^10.12.18",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}
