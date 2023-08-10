@@ -24,8 +24,17 @@ export interface TableRowProps<T = object> extends HTMLNextUIProps<"tr"> {
 }
 
 const TableRow = forwardRef<"tr", TableRowProps>((props, ref) => {
-  const {as, className, children, node, slots, state, isSelectable, classNames, ...otherProps} =
-    props;
+  const {
+    as,
+    className,
+    children,
+    node,
+    slots,
+    state,
+    isSelectable,
+    classNames,
+    ...otherProps
+  } = props;
 
   const Component = as || "tr";
   const shouldFilterDOMProps = typeof Component === "string";

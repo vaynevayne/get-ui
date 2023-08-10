@@ -1,14 +1,5 @@
 # @get-ui/table
 
-## 2.0.5
-
-### Patch Changes
-
-- Updated dependencies []:
-  - @get-ui/react-utils@2.0.3
-  - @get-ui/checkbox@2.0.5
-  - @get-ui/spacer@2.0.5
-
 ## 2.0.4
 
 ### Patch Changes

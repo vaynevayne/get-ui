@@ -14,6 +14,7 @@
     "react ui"
   ],
   "main": "src/index.ts",
+  "type": "module",
   "sideEffects": false,
   "files": [
     "dist"
@@ -41,46 +42,46 @@
     "postpack": "clean-package restore"
   },
   "dependencies": {
-    "@get-ui/system": "workspace:*",
-    "@get-ui/theme": "workspace:*",
     "@get-ui/accordion": "workspace:*",
     "@get-ui/avatar": "workspace:*",
     "@get-ui/badge": "workspace:*",
     "@get-ui/button": "workspace:*",
     "@get-ui/card": "workspace:*",
-    "@get-ui/chip": "workspace:*",
     "@get-ui/checkbox": "workspace:*",
+    "@get-ui/chip": "workspace:*",
     "@get-ui/code": "workspace:*",
-    "@get-ui/link": "workspace:*",
-    "@get-ui/pagination": "workspace:*",
-    "@get-ui/radio": "workspace:*",
-    "@get-ui/snippet": "workspace:*",
-    "@get-ui/spinner": "workspace:*",
-    "@get-ui/switch": "workspace:*",
-    "@get-ui/tooltip": "workspace:*",
-    "@get-ui/user": "workspace:*",
-    "@get-ui/progress": "workspace:*",
-    "@get-ui/input": "workspace:*",
-    "@get-ui/popover": "workspace:*",
+    "@get-ui/divider": "workspace:*",
     "@get-ui/dropdown": "workspace:*",
     "@get-ui/image": "workspace:*",
+    "@get-ui/input": "workspace:*",
+    "@get-ui/kbd": "workspace:*",
+    "@get-ui/link": "workspace:*",
     "@get-ui/modal": "workspace:*",
     "@get-ui/navbar": "workspace:*",
-    "@get-ui/table": "workspace:*",
-    "@get-ui/spacer": "workspace:*",
-    "@get-ui/divider": "workspace:*",
-    "@get-ui/kbd": "workspace:*",
-    "@get-ui/tabs": "workspace:*",
+    "@get-ui/pagination": "workspace:*",
+    "@get-ui/popover": "workspace:*",
+    "@get-ui/progress": "workspace:*",
+    "@get-ui/radio": "workspace:*",
     "@get-ui/skeleton": "workspace:*",
+    "@get-ui/snippet": "workspace:*",
+    "@get-ui/spacer": "workspace:*",
+    "@get-ui/spinner": "workspace:*",
+    "@get-ui/switch": "workspace:*",
+    "@get-ui/system": "workspace:*",
+    "@get-ui/table": "workspace:*",
+    "@get-ui/tabs": "workspace:*",
+    "@get-ui/theme": "workspace:*",
+    "@get-ui/tooltip": "workspace:*",
+    "@get-ui/user": "workspace:*",
     "@react-aria/visually-hidden": "^3.8.2"
   },
   "peerDependencies": {
-    "react": ">=18",
-    "framer-motion": ">=4.0.0"
+    "framer-motion": ">=4.0.0",
+    "react": ">=18"
   },
   "devDependencies": {
-    "react": "^18.0.0",
-    "clean-package": "2.2.0"
+    "clean-package": "2.2.0",
+    "react": "^18.0.0"
   },
   "clean-package": "../../../clean-package.config.json"
 }

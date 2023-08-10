@@ -1,9 +1,4 @@
-import type {
-  TableVariantProps,
-  SlotsToClasses,
-  TableReturnType,
-  TableSlots,
-} from "@get-ui/theme";
+import type {TableVariantProps, SlotsToClasses, TableReturnType, TableSlots} from "@get-ui/theme";
 import type {SelectionBehavior, DisabledBehavior} from "@react-types/shared";
 import type {TableState, TableStateProps} from "@react-stately/table";
 import type {TableCollection} from "@react-types/table";

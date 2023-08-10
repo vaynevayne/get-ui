@@ -1,5 +1,5 @@
 {
-  "name": "@get-ui/table2",
+  "name": "@get-ui/table_back",
   "version": "2.0.5",
   "description": "Tables are used to display tabular data using rows and columns. ",
   "keywords": [
@@ -34,14 +34,13 @@
     "postpack": "clean-package restore"
   },
   "peerDependencies": {
-    "@tanstack/react-table": "^8.9.3",
     "react": ">=18"
   },
   "dependencies": {
     "@get-ui/checkbox": "workspace:*",
+    "@get-ui/shared-utils": "workspace:*",
     "@get-ui/react-utils": "workspace:*",
     "@get-ui/shared-icons": "workspace:*",
-    "@get-ui/shared-utils": "workspace:*",
     "@get-ui/spacer": "workspace:*",
     "@get-ui/system": "workspace:*",
     "@get-ui/theme": "workspace:*",
@@ -55,15 +54,14 @@
     "@react-types/table": "^3.7.0"
   },
   "devDependencies": {
-    "@get-ui/button": "workspace:*",
     "@get-ui/chip": "workspace:*",
-    "@get-ui/pagination": "workspace:*",
+    "@get-ui/button": "workspace:*",
     "@get-ui/spinner": "workspace:*",
-    "@get-ui/tooltip": "workspace:*",
+    "@get-ui/pagination": "workspace:*",
     "@get-ui/use-infinite-scroll": "workspace:*",
+    "@get-ui/tooltip": "workspace:*",
     "@get-ui/user": "workspace:*",
     "@react-stately/data": "^3.10.0",
-    "@tanstack/react-table": "^8.9.3",
     "clean-package": "2.2.0",
     "react": "^18.0.0"
   },
