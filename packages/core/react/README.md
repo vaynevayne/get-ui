@@ -6,6 +6,12 @@
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vaynevayne/get-ui)
 
+## Quick Start
+
+Click the button to clone this repository and deploy it on Vercel:
+
+[![](https://vercel.com/button)](https://vercel.com/new)
+
 ### 开发步骤
 
 安装依赖: `pnpm install --hoist` , --hoist 是必须的
