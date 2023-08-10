@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
-// const { getui } = require("@get-ui/react");
+const { getui } = require("@get-ui/theme");
 
 module.exports = {
   content: [
@@ -17,5 +16,5 @@ module.exports = {
     extend: {},
   },
   darkMode: "class",
-  // plugins: [getui()],
+  plugins: [getui()],
 };

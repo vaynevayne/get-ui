@@ -21,7 +21,7 @@ import {ConfigTheme, ConfigThemes, DefaultThemeType, NextUIPluginConfig} from ".
 import {lightLayout, darkLayout, defaultLayout} from "./default-layout";
 import {baseStyles} from "./utils/classes";
 
-const DEFAULT_PREFIX = "nextui";
+const DEFAULT_PREFIX = "getui";
 
 // @internal
 const resolveConfig = (

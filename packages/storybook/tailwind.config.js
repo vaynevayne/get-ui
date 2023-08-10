@@ -1,4 +1,4 @@
-const {nextui} = require("@get-ui/theme/plugin");
+const {getui} = require("@get-ui/theme/plugin");
 
 // /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -11,5 +11,5 @@ module.exports = {
     "../core/theme/stories/**/*.{js,jsx,ts,tsx}",
   ],
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [getui()],
 };

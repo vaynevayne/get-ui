@@ -1,5 +1,5 @@
 {
-  "name": "nextui",
+  "name": "get-ui",
   "private": true,
   "version": "0.0.1",
   "license": "MIT",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/get-ui/nextui"
+    "url": "https://github.com/vaynevayne/get-ui"
   },
   "scripts": {
     "dev": "pnpm sb && pnpm dev:docs",

@@ -1,6 +1,6 @@
 {
   "name": "@get-ui/theme",
-  "version": "2.0.4",
+  "version": "0.0.1",
   "description": "The default theme for NextUI components",
   "keywords": [
     "theme",
@@ -15,6 +15,7 @@
   "homepage": "https://nextui.org",
   "license": "MIT",
   "main": "src/index.ts",
+  "type": "module",
   "sideEffects": false,
   "files": [
     "dist",
