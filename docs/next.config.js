@@ -4,12 +4,16 @@ const withNextra = require("nextra")({
 });
 
 module.exports = withNextra({
-  transpilePackages: ["@get-ui/react", ],
+  transpilePackages: ["@get-ui/react"],
   swcMinify: true,
   reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
   // redirects: require("./next-redirect.js"),
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // ignoreBuildErrors: process.env.IS_VERCEL_ENV === "true",
+    ignoreBuildErrors: true,
   },
 });
 

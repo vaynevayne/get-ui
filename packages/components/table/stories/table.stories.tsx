@@ -1,3 +1,5 @@
+import type {ColumnDef} from "@tanstack/react-table";
+
 import React from "react";
 import {Meta} from "@storybook/react";
 import {table as tableTheme} from "@get-ui/theme";
@@ -79,17 +81,17 @@ const rows = [
   },
 ];
 
-const columns = [
+const columns: ColumnDef<any>[] = [
   {
-    accessKey: "name",
+    accessorKey: "name",
     header: "NAME",
   },
   {
-    accessKey: "role",
+    accessorKey: "role",
     header: "ROLE",
   },
   {
-    accessKey: "status",
+    accessorKey: "status",
     header: "STATUS",
   },
 ];
