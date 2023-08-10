@@ -1,26 +1,10 @@
 ### 楔子
 
-灵活性第一, 越简单越好
+越简单越好
 
-目前前端组件库很多,但是多多少少有些问题
-比如:
+### Open in StackBlitz
 
-1. antd 铁板一块,且自定义行为太多而不支持撤销,而且样式很难修改,比如 select
-2. mantine-ui 组件太简陋, 功能太少
-
-灵活性是指:
-
-1. 修改样式,
-2. 撤销组件内部的自定义行为
-3. 方便的访问组件内部状态, 比如很多 select 组件在内部保存一份 filter 数据,但是外界无法访问, 解决方案:参考 aria-state
-4. dom 层面, 提供足够多的 slot, 比如 按钮的 icon, 需要抽象到 slot 级别
-5. 逻辑方面, 提供足够多的 hook, 比如用户传入 table 排序函数,由用户自己控制升序降序,方便实现某些行不参与排序
-6. 牺牲性能, 保证源码简洁,逻辑清晰,方便阅读,利于扩展
-
-此项目提供的组件, 保证用户方便扩展的前提下,提供足够多的功能, 另外寻找成熟且功能足够丰富的 hook 库,基于它来封装组件,比如
-[@tanstack/react-table](https://tanstack.com/table/v8)
-[downshift](https://www.downshift-js.com/)
-[floating-ui](https://floating-ui.com/docs/getting-started)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vaynevayne/get-ui)
 
 ### 开发步骤
 
