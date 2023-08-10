@@ -66,5 +66,5 @@ const Table = forwardRef<"table", TableProps>((props, ref) => {
   );
 });
 
-Table.displayName = "Unique.Table";
+Table.displayName = "GetUI.Table";
 export default Table;
