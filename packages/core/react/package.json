@@ -31,9 +31,9 @@
     "url": "https://github.com/get-ui/nextui/issues"
   },
   "scripts": {
-    "prebuild": "node src/scripts/prebuild.js",
+    "prebuild": "node src/scripts/prebuild.cjs",
     "build": "tsup --dts",
-    "postbuild": "node src/scripts/postbuild.js",
+    "postbuild": "node src/scripts/postbuild.cjs",
     "dev": "yarn build:fast -- --watch",
     "clean": "rimraf dist .turbo",
     "typecheck": "tsc --noEmit",
@@ -42,7 +42,6 @@
     "postpack": "clean-package restore"
   },
   "dependencies": {
-    "@get-ui/accordion": "workspace:*",
     "@get-ui/avatar": "workspace:*",
     "@get-ui/badge": "workspace:*",
     "@get-ui/button": "workspace:*",

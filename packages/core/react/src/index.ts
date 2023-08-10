@@ -4,7 +4,6 @@
 
 export * from "@get-ui/system";
 export * from "@get-ui/theme";
-export * from "@get-ui/accordion";
 export * from "@get-ui/avatar";
 export * from "@get-ui/badge";
 export * from "@get-ui/button";
