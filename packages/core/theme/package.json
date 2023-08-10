@@ -15,7 +15,6 @@
   "homepage": "https://nextui.org",
   "license": "MIT",
   "main": "src/index.ts",
-  "type": "module",
   "sideEffects": false,
   "files": [
     "dist",

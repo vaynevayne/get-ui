@@ -258,7 +258,7 @@ const corePlugin = (
   );
 };
 
-export const nextui = (config: NextUIPluginConfig = {}): ReturnType<typeof plugin> => {
+export const getui = (config: NextUIPluginConfig = {}): ReturnType<typeof plugin> => {
   const {
     themes: themeObject = {},
     defaultTheme = "light",

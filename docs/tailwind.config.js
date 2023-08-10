@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const { getui } = require("@get-ui/theme");
-
+const { getui } = require("@get-ui/theme/plugin");
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",

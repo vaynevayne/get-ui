@@ -4,7 +4,7 @@ const withNextra = require("nextra")({
 });
 
 module.exports = withNextra({
-  transpilePackages: ["@get-ui/react", "@get-ui/theme"],
+  transpilePackages: ["@get-ui/react"],
   swcMinify: true,
   reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
   // redirects: require("./next-redirect.js"),
